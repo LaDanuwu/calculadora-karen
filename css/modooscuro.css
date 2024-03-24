@@ -1,0 +1,6 @@
+body.nightmode #cont-general{
+  background: black;
+}
+body.nightmode .btn{
+  background: pink;
+}

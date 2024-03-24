@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #ff0084;
+    --secondary-color: #f8d7e7;
+    --font-title: 70px;
+    --font-subtitle: 32px;
+    --primary-tip: font-family: "Varela Round", sans-serif;
+    --secondary-tip: font-family: "Maven Pro", sans-serif;
+}
+#cont-general{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cont-calculadora{
+    margin: 20px;
+    width: 500px;
+    height: 660px;
+    border: 1px solid var(--primary-color);
+    border-radius: 25px;
+}
+#cont-escritura{
+    width: 110%;
+    padding: 20px; 
+}
+#cont-escritura input{
+    width: 90%;
+    font-size: var(--font-title);
+    margin-bottom: 20px;
+}
+.cont-botones{
+    width: 100%;
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.btn{
+    width: 22%;
+    padding: 20px;
+    font-size: var(--font-subtitle);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: inset 15px 15px 30px #a79ca1,
+                inset -15px -15px 30px #fff1f7;
+}
+.btn.doble{
+    width: 45%;
+}
+
+.btn.lat{
+  color: orange;
+}
+
+/* Para el switch  */
+/* The switch - the box around the slider */
+#theme-toggle-button {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 7em;
+  cursor: pointer;
+}
+
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+/* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked + svg #stars {
+  opacity: 1;
+}
+
+                                                 
